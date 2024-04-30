@@ -1,0 +1,305 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --blue-dark: #101023;
+  --blue-light: #3f3f99;
+  --blue-lighter: #605cf4;
+  --max-width: 1280px;
+}
+
+body {
+  font-family: "Raleway", "sans-serif";
+  color: var(--blue-dark);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  margin: 20px 0;
+  padding: 10px 0;
+  position: sticky;
+  top: 20px;
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+.logo {
+  width: 50%;
+}
+
+.logo-img {
+  max-width: 400px;
+  height: 100%;
+}
+
+.logo-img-responsive {
+  display: none;
+}
+
+nav {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  a {
+    font-size: 2rem;    
+  }
+}
+
+.btn {
+  font-size: 1.5rem;
+  background-color: var(--blue-light);
+  color: var(--white);
+  padding: 10px;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container-narrow {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0 50px;
+}
+
+p{
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+main {
+  margin-bottom: 200px;
+
+  h1 {
+    font-size: 700%;
+    font-weight: 800;
+    text-align: center;
+    margin: 40px 0;
+  }
+
+  img {
+    margin: 50px auto
+  }
+}
+
+.tech-logos {
+  margin-bottom: 200px;
+
+  .container {
+    display: flex;
+    gap: 50px;
+    
+    justify-content: space-evenly;
+    align-items: center;    
+  }
+
+  img {
+    margin: 0 auto;
+  }
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 45px;
+}
+
+.cards{
+  max-width: var(--max-width);
+  margin: 10px auto;
+  margin-bottom: 100px;
+
+  .cards-container{
+    display: flex;
+    gap: 5%;
+    margin-bottom: 100px;
+
+    .card {
+      padding: 30px;
+      background-color: var(--blue-light);
+      border-radius: 50px;
+      color: #ffffff;
+      word-spacing: 1px;
+      max-width: 30%;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+  
+      h4 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+  
+      p {
+        font-size: 1.2rem;
+      }
+
+      i {
+        text-align: center;
+        font-size: 10rem;
+        
+      }
+    }
+  }
+
+
+}
+
+.pricing {
+  max-width: 1280px;
+  margin: 50px auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+}
+
+.contact {
+  background:
+        linear-gradient(var(--blue-lighter), transparent),
+        linear-gradient(to top right, var(--blue-light), transparent),
+        linear-gradient(to top left, var(--blue-dark), transparent);
+    background-blend-mode: screen;
+  color: white;
+  margin: 30px auto;
+  padding: 50px;
+
+
+  .contact-form {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  p {
+    max-width: 980px;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .button {
+    max-width: 780px;
+    margin: 50px auto;
+    text-align: center;
+  }
+
+  a {
+    margin: 10px auto;
+  }
+
+
+}
+
+@media(max-width: 600px){
+  main {
+    h1 {
+      font-size: 300%;
+    }
+  }
+
+  .logo-img {
+    max-width: 400px;
+    height: 100%;
+
+    display: none;
+  }
+  
+  .logo-img-responsive {
+    display: block;
+    max-width: 80px;
+    height: 100%;
+  }
+}
+
+@media(max-width: 980px) {
+  .cards {
+
+    .card {
+      width: 100%;
+    }
+  }
+}
+
+@media(max-width: 1024px){
+  main {
+    h1 {
+      font-size: 500%;
+      overflow: hidden;
+    }
+  }
+
+  .logo-img {
+    max-width: 400px;
+    height: 100%;
+
+    display: none;
+  }
+  
+  .logo-img-responsive {
+    display: block;
+    max-width: 80px;
+    height: 100%;
+  }
+
+  .tech-logos {
+  
+    .container {
+      display: flex;
+      flex-direction: column;  
+    }
+
+    img {
+      width: 40%;
+    }
+  }
+}
