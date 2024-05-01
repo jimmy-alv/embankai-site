@@ -1,6 +1,6 @@
 const goToContactForm = () => {
   window.scroll({
-    top: 4500, 
+    top: 3000, 
     behavior: "smooth"
   })
 }

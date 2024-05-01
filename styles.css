@@ -33,14 +33,14 @@ a {
 
 header {
   margin: 20px 0;
-  padding: 10px 0;
+  padding: 10px 50px;
   position: sticky;
   top: 20px;
   background-color: #ffffff;
 }
 
 .container {
-  max-width: 1340px;
+  max-width: var(--max-width);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -145,6 +145,7 @@ h3 {
   max-width: var(--max-width);
   margin: 10px auto;
   margin-bottom: 100px;
+  padding: 0 50px;
 
   .cards-container{
     display: flex;
@@ -157,7 +158,7 @@ h3 {
       border-radius: 50px;
       color: #ffffff;
       word-spacing: 1px;
-      max-width: 30%;
+      width: 30%;
   
       display: flex;
       flex-direction: column;
@@ -177,19 +178,15 @@ h3 {
 
       i {
         text-align: center;
-        font-size: 10rem;
-        
+        font-size: 10rem;        
       }
     }
   }
-
-
 }
 
 .pricing {
   max-width: 1280px;
   margin: 50px auto;
-
   h2 {
     text-align: center;
     margin-bottom: 40px;
@@ -203,12 +200,10 @@ h3 {
         linear-gradient(var(--blue-lighter), transparent),
         linear-gradient(to top right, var(--blue-light), transparent),
         linear-gradient(to top left, var(--blue-dark), transparent);
-    background-blend-mode: screen;
+  background-blend-mode: screen;
   color: white;
   margin: 30px auto;
   padding: 50px;
-
-
   .contact-form {
     max-width: 1280px;
     margin: 0 auto;
@@ -240,6 +235,25 @@ h3 {
 
 }
 
+footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+
+  img {
+    height: 100%;
+    max-width: 300px;
+  }
+
+  i {
+    font-size: 3rem;
+    color: var(--blue-dark);
+  }
+}
+
 @media(max-width: 600px){
   main {
     h1 {
@@ -250,23 +264,13 @@ h3 {
   .logo-img {
     max-width: 400px;
     height: 100%;
-
     display: none;
   }
   
   .logo-img-responsive {
     display: block;
     max-width: 80px;
-    height: 100%;
-  }
-}
-
-@media(max-width: 980px) {
-  .cards {
-
-    .card {
-      width: 100%;
-    }
+    height: 50%;
   }
 }
 
@@ -281,7 +285,6 @@ h3 {
   .logo-img {
     max-width: 400px;
     height: 100%;
-
     display: none;
   }
   
@@ -291,8 +294,7 @@ h3 {
     height: 100%;
   }
 
-  .tech-logos {
-  
+  .tech-logos {  
     .container {
       display: flex;
       flex-direction: column;  
@@ -300,6 +302,22 @@ h3 {
 
     img {
       width: 40%;
+    }
+  }
+}
+
+@media(max-width: 980px){
+  .cards {
+
+    .cards-container{
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      gap: 50px;
+
+      .card {
+        width: 100%;
+      }
     }
   }
 }
