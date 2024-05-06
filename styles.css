@@ -107,7 +107,7 @@ main {
   margin-bottom: 200px;
 
   h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     font-weight: 800;
     text-align: center;
     margin: 40px 0;
@@ -195,6 +195,15 @@ h3 {
   }
 }
 
+.partners {
+  margin: 50px auto;
+
+  img {
+    width: 200px;
+    height: 100%;
+  }
+}
+
 .contact {
   background:
         linear-gradient(var(--blue-lighter), transparent),
@@ -257,7 +266,7 @@ footer {
 @media(max-width: 600px){
   main {
     h1 {
-      font-size: 300%;
+      font-size: 2.5rem;
     }
   }
 
@@ -277,7 +286,7 @@ footer {
 @media(max-width: 1024px){
   main {
     h1 {
-      font-size: 500%;
+      /* font-size: 500%; */
       overflow: hidden;
     }
   }
@@ -294,14 +303,25 @@ footer {
     height: 100%;
   }
 
+  
   .tech-logos {  
     .container {
       display: flex;
-      flex-direction: column;  
+      flex-direction: column;
     }
 
     img {
       width: 40%;
+    }
+  }
+
+  .partners {
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
