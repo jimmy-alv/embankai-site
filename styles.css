@@ -198,6 +198,15 @@ h3 {
 .partners {
   margin: 50px auto;
 
+  max-width: 1280px;
+  margin: 50px auto;
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
   img {
     width: 200px;
     height: 100%;
@@ -316,6 +325,8 @@ footer {
   }
 
   .partners {
+    
+
     .container {
       display: flex;
       flex-direction: column;
